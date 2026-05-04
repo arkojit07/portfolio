@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Arkojit Kar — Data Science Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+
+
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+
+<!-- ─── Loader ─── -->
+<div id="loader" role="status" aria-label="Loading portfolio">
+  <div class="loader-logo">Arkojit's Portfolio</div>
+  <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+  <div class="loader-text">Initializing</div>
+</div>
+
+<!-- ─── Particles ─── -->
+<canvas id="particles" aria-hidden="true"></canvas>
+
+<!-- ─── Navbar ─── -->
+<nav role="navigation" aria-label="Main navigation">
+  <a href="#hero" class="nav-logo">AK.</a>
+  <ul class="nav-links" role="list">
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false" id="hamburger">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="nav-mobile" id="navMobile" role="navigation" aria-label="Mobile navigation">
+  <a href="#skills" class="mobile-link">Skills</a>
+  <a href="#projects" class="mobile-link">Projects</a>
+  <a href="#education" class="mobile-link">Education</a>
+  <a href="#contact" class="mobile-link">Contact</a>
+</div>
+
+<main>
+<!-- ─── Hero ─── -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-glow hero-glow-1" aria-hidden="true"></div>
+    <div class="hero-glow hero-glow-2" aria-hidden="true"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="hero-badge-dot" aria-hidden="true"></span>
+        Open to Opportunities
+      </div>
+      <h1 class="hero-name">
+        <span class="shimmer">Arkojit</span><br/>Kar
+      </h1>
+      <div class="hero-role">Data Science &amp; ML Engineering</div>
+      <p class="hero-desc">
+        Building <strong>data-driven tools</strong> that turn raw datasets into actionable insights — from analysis APIs to intelligent backends.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V9z"/><polyline points="13 2 13 9 20 9"/></svg>
+          View Projects
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+          Get in Touch
+        </a>
+        <a href="resume.pdf" download class="btn btn-primary">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Resume
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-num">1<span>+</span></div>
+          <div class="stat-label">Project Shipped</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">8<span>+</span></div>
+          <div class="stat-label">Technologies</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">7.38</div>
+          <div class="stat-label">Current SGPA</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Skills ─── -->
+<section id="skills">
+  <div class="container">
+    <p class="section-label">What I Know</p>
+    <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+    <div class="skills-grid">
+      <div class="skill-category reveal">
+        <div class="skill-cat-header">
+          <div class="skill-cat-icon" style="background:rgba(99,102,241,0.12);border:1px solid rgba(99,102,241,0.25)">💻</div>
+          <span class="skill-cat-title" style="color:#a5b4fc">Languages</span>
+        </div>
+        <div class="skill-chips">
+          <span class="chip chip-indigo">Python</span>
+          <span class="chip chip-indigo">C / C++</span>
+          <span class="chip chip-indigo">SQL</span>
+        </div>
+      </div>
+      <div class="skill-category reveal reveal-delay-1">
+        <div class="skill-cat-header">
+          <div class="skill-cat-icon" style="background:rgba(6,182,212,0.1);border:1px solid rgba(6,182,212,0.25)">📊</div>
+          <span class="skill-cat-title" style="color:#67e8f9">Data & Libraries</span>
+        </div>
+        <div class="skill-chips">
+          <span class="chip chip-cyan">Pandas</span>
+          <span class="chip chip-cyan">NumPy</span>
+          <span class="chip chip-cyan">Matplotlib</span>
+          <span class="chip chip-cyan">Seaborn</span>
+        </div>
+      </div>
+      <div class="skill-category reveal reveal-delay-2">
+        <div class="skill-cat-header">
+          <div class="skill-cat-icon" style="background:rgba(236,72,153,0.1);border:1px solid rgba(236,72,153,0.25)">⚡</div>
+          <span class="skill-cat-title" style="color:#f9a8d4">Frameworks</span>
+        </div>
+        <div class="skill-chips">
+          <span class="chip chip-pink">FastAPI</span>
+        </div>
+      </div>
+      <div class="skill-category reveal reveal-delay-3">
+        <div class="skill-cat-header">
+          <div class="skill-cat-icon" style="background:rgba(245,158,11,0.1);border:1px solid rgba(245,158,11,0.25)">🗄️</div>
+          <span class="skill-cat-title" style="color:#fcd34d">Databases</span>
+        </div>
+        <div class="skill-chips">
+          <span class="chip chip-amber">MySQL</span>
+          <span class="chip chip-amber">PostgreSQL</span>
+          <span class="chip chip-amber">SQLite</span>
+        </div>
+      </div>
+      <div class="skill-category reveal reveal-delay-4">
+        <div class="skill-cat-header">
+          <div class="skill-cat-icon" style="background:rgba(99,102,241,0.1);border:1px solid rgba(99,102,241,0.25)">🛠️</div>
+          <span class="skill-cat-title" style="color:#c7d2fe">Tools & Concepts</span>
+        </div>
+        <div class="skill-chips">
+          <span class="chip chip-indigo">VS Code</span>
+          <span class="chip chip-indigo">Git</span>
+          <span class="chip chip-indigo">GitHub</span>
+          <span class="chip chip-cyan">Data Analysis</span>
+          <span class="chip chip-cyan">REST APIs</span>
+          <span class="chip chip-pink">Data Processing</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Projects ─── -->
+<section id="projects">
+  <div class="container">
+    <p class="section-label">What I've Built</p>
+    <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+    <div class="projects-grid">
+      <div class="project-card reveal">
+        <div class="project-icon" aria-hidden="true">🔍</div>
+        <div class="project-title">Dataset Analyzer API</div>
+        <p class="project-desc">
+          A backend API built with FastAPI that dynamically processes and analyzes any CSV dataset, extracting meaningful insights through modular, scalable endpoints.
+        </p>
+        <div class="project-impact" role="note" aria-label="Project impact">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+          Reduced manual data analysis effort by ~70% through automated insight generation
+        </div>
+        <div class="project-tags">
+          <span class="project-tag">FastAPI</span>
+          <span class="project-tag">Python</span>
+          <span class="project-tag">Pandas</span>
+          <span class="project-tag">NumPy</span>
+          <span class="project-tag">Matplotlib</span>
+          <span class="project-tag">seaborn</span>
+        </div>
+        <div class="project-actions">
+          <a href="https://github.com/arkojit07/dataset-analyzer-api.git" target="_blank" rel="noopener noreferrer" class="btn-sm btn-sm-ghost" aria-label="View source on GitHub">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <span class="btn-sm btn-sm-primary" style="opacity:0.5;cursor:not-allowed">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            Live Demo
+          </span>
+        </div>
+      </div>
+
+      <!-- Placeholder card to show potential -->
+      <div class="project-card reveal reveal-delay-1" style="border-style:dashed;opacity:0.55">
+        <div class="project-icon" aria-hidden="true">🚧</div>
+        <div class="project-title" style="color:var(--muted)">Next Project Coming Soon</div>
+        <p class="project-desc">
+          Currently exploring new ideas in data pipelines, ML integration, and API tooling. Stay tuned.
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">Python</span>
+          <span class="project-tag">SQL</span>
+          <span class="project-tag">Data</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Education ─── -->
+<section id="education">
+  <div class="container">
+    <p class="section-label">Academic Background</p>
+    <h2 class="section-title">Education</h2>
+    <div class="edu-card reveal">
+      <div class="edu-icon-wrap" aria-hidden="true">🎓</div>
+      <div>
+        <div class="edu-degree">B.Tech in Computer Science &amp; Engineering</div>
+        <div class="edu-school">Siliguri Institute of Technology (MAKAUT) &nbsp;·&nbsp; 2024 – 2028</div>
+        <div class="edu-meta">
+          <span class="edu-badge badge-amber">Current SGPA: 7.38</span>
+          <span class="edu-badge badge-green">Undergraduate</span>
+          <span class="edu-badge" style="background:rgba(99,102,241,0.1);border:1px solid rgba(99,102,241,0.3);color:#a5b4fc">CSE</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Contact ─── -->
+<section id="contact">
+  <div class="container">
+    <p class="section-label">Let's Connect</p>
+    <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+    <div class="contact-grid">
+      <div class="contact-card email reveal" onclick="copyEmail()" role="button" tabindex="0" aria-label="Copy email address to clipboard">
+        <div class="contact-icon" style="background:rgba(236,72,153,0.12);border:1px solid rgba(236,72,153,0.25)" aria-hidden="true">📧</div>
+        <div class="contact-info">
+          <div class="contact-label">Email · Click to copy</div>
+          <div class="contact-value">arkojit2410@gmail.com</div>
+        </div>
+      </div>
+      <a class="contact-card linkedin reveal reveal-delay-1" href="https://linkedin.com/in/arkojit-kar" target="_blank" rel="noopener noreferrer" aria-label="Visit LinkedIn profile">
+        <div class="contact-icon" style="background:rgba(6,182,212,0.1);border:1px solid rgba(6,182,212,0.25)" aria-hidden="true">💼</div>
+        <div class="contact-info">
+          <div class="contact-label">LinkedIn</div>
+          <div class="contact-value">arkojit-kar</div>
+        </div>
+      </a>
+      <a class="contact-card github reveal reveal-delay-2" href="https://github.com/arkojit07" target="_blank" rel="noopener noreferrer" aria-label="Visit GitHub profile">
+        <div class="contact-icon" style="background:rgba(99,102,241,0.1);border:1px solid rgba(99,102,241,0.25)" aria-hidden="true">⚡</div>
+        <div class="contact-info">
+          <div class="contact-label">GitHub</div>
+          <div class="contact-value">arkojit07</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p>Designed &amp; built by <a href="#hero">Arkojit Kar</a> | Ph number +91-9475932207</p>
+</footer>
+
+<!-- Copy toast -->
+<div class="copy-toast" id="copyToast" role="alert" aria-live="polite">✓ Email copied to clipboard!</div>
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
